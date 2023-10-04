@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: fbc-kas-comp
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads-stage/dev-release-team-tenant/fbc-kas-app/fbc-kas-comp@sha256:5c04ad9f64d74d8fea763012199e4565ff3a80213df11ae34a707092b6028bb8
+        name: fbc
+        resources: {}
+status: {}
